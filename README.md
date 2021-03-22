@@ -1,7 +1,16 @@
 # practic-git
-20210322- 
+20210322-</br> 
 新增初始-Repository 
-在要做"檔案控制"的檔案下 初始化這個目錄 ==git init==
+在要做"檔案控制"的檔案下 初始化這個目錄 ==git init==</br>
+$ echo "hello,git" > welcome.html (此指令是在該目錄下建立一個檔案.html 並在內容打上"hello,git"</br>
+$ git add "*".html ("*"全部的.html 檔案) / add "--all"(將全部的當案都加到 暫存區)  / add "." (僅在這個目錄之下的檔案加入暫存區)<br/>
+$ git commit -m "修改大綱" -m 後面的 "內容一定要寫" </br>
+$ git commit -a -m (快捷指令從工作區>推到暫存區>再推到儲存區)</br>
+$ git log 檢查git紀錄 / --onelin --graph  加上額外參數-精簡顯示 . 找符合內容"wtf" --onelin -- grep="wtf" </br>
+$ git log -s "ruby" -s參數  照符合條件 人 或是時間 --since="9am" --until="12pm" </br>
+$ git rm welcome.html 刪除也需要 add 及 commit  兩段才完成</br>
+$ git rm welcome --cached 移除 git 控制.</br> 
+$ mv hello.html  world.html 將前檔案名字改成後者
 
 常用指令
 + cd 切換目錄
