@@ -2,7 +2,7 @@
 20210322-</br> 
 新增初始-Repository 
 在要做"檔案控制"的檔案下 初始化這個目錄 ==git init==</br>
-$ echo "hello,git" > welcome.html (此指令是在該目錄下建立一個檔案.html 並在內容打上"hello,git"</br>
+$ echo "hello,git" > welcome.html (此指令是在該目錄下建立一個檔案.html 並在內容打上"hello,git")</br>
 $ git add "*".html ("*"全部的.html 檔案) / add "--all"(將全部的當案都加到 暫存區)  / add "." (僅在這個目錄之下的檔案加入暫存區)<br/>
 $ git commit -m "修改大綱" -m 後面的 "內容一定要寫" </br>
 $ git commit -a -m (快捷指令從工作區>推到暫存區>再推到儲存區)</br>
