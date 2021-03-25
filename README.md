@@ -1,4 +1,22 @@
 # practic-git
+0325-<br/>
++ 從伺服器上取得repository - 可以用 https 或是 ssh 兩種方式連接</br>
++ push -u  推上 後面-u 是指上游 upstream 意思是傳到遠端某server上的分支 第一次上傳設定 成為預設  下次自然會指向該分支<br/>
++ pull 下載更新  $ git pull = git fetch + git merge</br>
++ pull+rebase 在做完 fetch 後 也可以用rebase 來完成合併, 跟 merge 的方式有些不同. 可避免掉額外的 commit</br> 
++ clone 跟 pull 的差異- colne 使用在第一次看到,將檔案下載回來時,爾後的更新最新的線上版本 使用 pull and fetch 就可以了</br>
++ pull request (PR)-與其他開發者互動 ,請求原開發者拉回審視</br>
++ fork - 複製檔案回到本地,使用修改</br>
+
+分支就像是貼紙一樣　head > master> 789d5e</br>
+.git 目錄裡的寶藏四大物件- blob(該目錄下使用blob物件方式存放), tree, commit(在這裡表示查看更細節的內容), tag(標籤)
++ blob-物件的檔名 是由SHA-1 演算法決定的(40個字.拿前面2個字當目錄名稱,剩餘38個字是檔案名字), blob 的內容則是由壓縮演算法決定
++ tree-目錄以及檔案的名使用tree方式存放,tree的物件內容會指向某些blob或是其他的tree
++ git cat-file (-t /-p) 該指令查看.git檔案內容, -t 參數,查SHA-1這個值所代表物件的型態, -p 參數,查SHA-1指向那顆物件的內容
++ tag 標籤- 是一個指向某一個commit的指標, 跟分支branch很像 -有兩種標籤 清量標籤lighweight tab及附註標籤annotated tag.
+
+
+
 20210322-</br> 
 新增初始-Repository 
 在要做"檔案控制"的檔案下 初始化這個目錄 ==git init==</br>
